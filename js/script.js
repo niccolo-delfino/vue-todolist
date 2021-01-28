@@ -13,6 +13,8 @@ var app = new Vue({
   },
 
   methods: {
-
+    cancellaTodo(index){
+      this.todos.splice(index,1);
+    }
   }
 });

@@ -18,8 +18,8 @@
     <div class="all-todos">
       <h2>cose da fare</h2>
       <ul>
-        <li v-for="todo in todos"> {{todo}}
-        <i class="fas fa-times"></i>
+        <li v-for="(todo, index) in todos"> {{todo}}
+        <i class="fas fa-times" @click="cancellaTodo(index)"></i>
         </li>
       </ul>
     </div>
