@@ -15,6 +15,11 @@
 <body>
 
   <div class="container" id="app">
+    <div class="nuovo-todo">
+      <input type="text" @keyup.enter="aggiungiTodo" v-model="todosNuovo" placeholder="Inserisci qui">
+      <button>Aggiungi</button>
+    </div>
+
     <div class="all-todos">
       <h2>cose da fare</h2>
       <ul>

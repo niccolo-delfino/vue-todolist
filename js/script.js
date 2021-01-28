@@ -9,11 +9,20 @@ var app = new Vue({
       'prova4',
       'prova5'
     ],
-    todosCancellati: []
+    todosCancellati: [],
+    todosNuovo: '',
 
   },
 
   methods: {
+    aggiungiTodo(){
+      if (this.todosNuovo.length <5) {
+        alert('Devi scrivere almeno 5 caratteri')
+      }else {
+        this.todos.push(this.todosNuovo);
+        this.todosNuovo = '';
+      }
+    },
     cancellaTodo(index){
       this.todosCancellati.push(this.todos[index]);
       this.todos.splice(index,1);
