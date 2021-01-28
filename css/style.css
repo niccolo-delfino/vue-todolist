@@ -5,7 +5,83 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body{
+background-position: center 120px;
+background-attachment: scroll;
+background-image: url('https://img1.ak.crunchyroll.com/i/spire1/b6e71029617186a02596e0973bf56b1e1605029967_main.png');
+background-repeat: no-repeat;
+}
+
 .container{
-  width: 80%;
+  width: 960px;
   margin: 0 auto;
+}
+
+nav{
+  height: 60px;
+  display: flex;
+}
+
+.logo{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo img{
+  width: 60%;
+}
+
+.menu{
+  width: 50%;
+  display: flex;
+}
+
+.menu ul{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  line-height: 60px;
+  margin-right: 25px;
+}
+
+.menu ul li a:hover{
+  color: #F47521;
+}
+
+.accedi{
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.accedi .button a{
+  text-decoration: none;
+  color: white;
+  background-color: #F47521;
+  padding: 5px 15px;
+}
+
+.adv{
+  height: 60px;
+  background-image: url('https://img1.ak.crunchyroll.com/i/spire3/4aa7890b2828fe74dbe0afacb5c694561611617291_main.png');
+  background-position: center;
+}
+.m-top{
+  margin-top: 120px;
+}
+
+#app{
+  margin-top: 190px;
+  position: sticky;
 }
