@@ -14,6 +14,17 @@
 </head>
 <body>
 
+  <div class="container" id="app">
+    <div class="all-todos">
+      <h2>cose da fare</h2>
+      <ul>
+        <li v-for="todo in todos"> {{todo}}
+        <i class="fas fa-times"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

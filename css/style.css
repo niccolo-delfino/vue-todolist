@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
