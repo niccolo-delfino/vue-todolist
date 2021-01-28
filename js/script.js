@@ -8,13 +8,19 @@ var app = new Vue({
       'prova3',
       'prova4',
       'prova5'
-    ]
+    ],
+    todosCancellati: []
 
   },
 
   methods: {
     cancellaTodo(index){
+      this.todosCancellati.push(this.todos[index]);
       this.todos.splice(index,1);
+    },
+    ripristinaTodo(index){
+      this.todos.push(this.todosCancellati[index]);
+      this.todosCancellati.splice(index,1);
     }
   }
 });

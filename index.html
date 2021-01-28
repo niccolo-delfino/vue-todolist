@@ -22,6 +22,14 @@
         <i class="fas fa-times" @click="cancellaTodo(index)"></i>
         </li>
       </ul>
+
+      <h2>cose fatte</h2>
+      <ul>
+        <li v-for="(todo, index) in todosCancellati"> {{todo}}
+        <i class="fas fa-window-restore" @click="ripristinaTodo(index)"></i>
+        <i class="fas fa-times"></i>
+        </li>
+      </ul>
     </div>
   </div>
 
