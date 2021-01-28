@@ -33,6 +33,9 @@ var app = new Vue({
     },
     cancellaDefinitivamente(index){
       this.todosCancellati.splice(index,1);
+    },
+    cancellaTutto(){
+    this.todosCancellati.splice(0,this.todosCancellati.length);
     }
   }
 });

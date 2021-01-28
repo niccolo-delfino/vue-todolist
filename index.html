@@ -17,7 +17,7 @@
   <div class="container" id="app">
     <div class="nuovo-todo">
       <input type="text" @keyup.enter="aggiungiTodo" v-model="todosNuovo" placeholder="Inserisci qui">
-      <button>Aggiungi</button>
+      <button @click="aggiungiTodo">Aggiungi</button>
     </div>
 
     <div class="all-todos">
@@ -28,6 +28,8 @@
         </li>
       </ul>
 
+      <span>Cancella tutto</span>
+      <i class="fas fa-times" @click="cancellaTutto"></i>
       <h2>cose fatte</h2>
       <ul>
         <li v-for="(todo, index) in todosCancellati"> {{todo}}
