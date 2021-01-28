@@ -27,7 +27,7 @@
       <ul>
         <li v-for="(todo, index) in todosCancellati"> {{todo}}
         <i class="fas fa-window-restore" @click="ripristinaTodo(index)"></i>
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times" @click="cancellaDefinitivamente(index)"></i>
         </li>
       </ul>
     </div>

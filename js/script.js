@@ -21,6 +21,9 @@ var app = new Vue({
     ripristinaTodo(index){
       this.todos.push(this.todosCancellati[index]);
       this.todosCancellati.splice(index,1);
+    },
+    cancellaDefinitivamente(index){
+      this.todosCancellati.splice(index,1);
     }
   }
 });
