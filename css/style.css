@@ -160,7 +160,7 @@ display: flex;
 
 /* LATO SX */
 .sx{
-  width: 700px;
+  width: 650px;
 }
 /* COVER ANIME */
 .all-anime{
@@ -175,6 +175,12 @@ display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
+
+.anime-cover:hover{
+  box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
 .anime-cover{
   width: 136px;
   background-color: white;
@@ -182,20 +188,83 @@ display: flex;
 
 .anime .anime-cover img{
   height: 189px;
-  padding: 12px 12px 10px 12px;
+  padding: 12px 12px 5px 12px;
 }
 
 .anime .nome-anime{
+  font-size: 13px;
+  font-weight: bold;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
+.anime .episodi{
+  padding-top: 2px;
+  padding-bottom: 10px;
+  font-size: 11px;
+  color: grey;
+}
 
 
 /* LATO DX */
 .dx{
-  width: 280px;
+  width: 330px;
+}
+
+.dx .laterali{
+  margin-top: 20px;
+}
+
+.dx .laterali a{
+  text-decoration: none;
+  color: #0a6da4;
+}
+
+.dx .laterali a:hover{
+  text-decoration: underline;
+}
+
+.dx .laterali>h4{
+  border-top: 1px solid #ccc;
+  padding: 10px 0 8px;
+}
+
+.dx .laterali p{
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+
+.dx .laterali h4{
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* EPISODI DX */
+.show{
+  margin-right: 10px;
+  display: flex;
+}
+
+.show:hover{
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.3);
+}
+.show .locandina,
+.show .info{
+  padding: 5px;
+}
+
+.dx .laterali .show h3{
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.dx .laterali .video{
+  font-size: 12px;
+  color: grey
 }
 
 
