@@ -206,6 +206,45 @@ display: flex;
   color: grey;
 }
 
+/* TO DO */
+.lista{
+  margin: 25px;
+  border: 1px solid #F47521;
+}
+
+.lista .lista-container{
+  margin-left: 20px;
+}
+
+.lista .barra-grigia{
+  width: 100%;
+}
+
+.lista .barra-grigia h2{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 40px;
+  color: white;
+}
+
+.lista .lista-container h3{
+  color: #F47521;
+}
+
+.lista li{
+  padding: 10px 0;
+  font-size: 15px;
+  border-bottom: 1px solid grey;
+}
+
+.lista li i{
+  padding-left: 25px;
+}
+
+.lista h4{
+  color: grey;
+}
+
 
 /* LATO DX */
 .dx{

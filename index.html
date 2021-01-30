@@ -150,28 +150,34 @@
             <!-- FINE ANIME -->
 
             <!-- ALLTODO-->
-            <div class="nuovo-todo">
-              <input type="text" @keyup.enter="aggiungiTodo" v-model="todosNuovo" placeholder="Inserisci qui">
-              <button @click="aggiungiTodo">Aggiungi</button>
-            </div>
+            <div class="lista">
+              <div class="barra-grigia">
+                <h2>La tua lista</h2>
+                <div class="nuovo-todo">
+                  <input type="text" @keyup.enter="aggiungiTodo" v-model="todosNuovo" placeholder="Inserisci qui">
+                  <button @click="aggiungiTodo">Aggiungi</button>
+                </div>
+              </div>
 
-            <div class="all-todos">
-              <h2>cose da fare</h2>
-              <ul class="none">
-                <li v-for="(todo, index) in todos"> {{todo}}
-                <i class="fas fa-times" @click="cancellaTodo(index)"></i>
-                </li>
-              </ul>
+              <div class="lista-container">
+                <div class="all-todos">
+                  <h3>Anime da guardare</h3>
+                  <ul class="none">
+                    <li v-for="(todo, index) in todos"> {{todo}}
+                    <i class="fas fa-times" @click="cancellaTodo(index)"></i>
+                    </li>
+                  </ul>
 
-              <span>Cancella tutto</span>
-              <i class="fas fa-times" @click="cancellaTutto"></i>
-              <h2>cose fatte</h2>
-              <ul>
-                <li v-for="(todo, index) in todosCancellati"> {{todo}}
-                <i class="fas fa-window-restore" @click="ripristinaTodo(index)"></i>
-                <i class="fas fa-times" @click="cancellaDefinitivamente(index)"></i>
-                </li>
-              </ul>
+                  <h4>Cancella tutto <i class="fas fa-times" @click="cancellaTutto"></i></h4>              
+                  <h3>Anime guardati</h3>
+                  <ul class="none">
+                    <li v-for="(todo, index) in todosCancellati"> {{todo}}
+                    <i class="fas fa-window-restore" @click="ripristinaTodo(index)"></i>
+                    <i class="fas fa-times" @click="cancellaDefinitivamente(index)"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -234,9 +240,11 @@
                   <h3>D4DJ First Mix</h3>
                   <div class="video">13 Video</div>
                 </div>
-
               </div>
+
             </div>
+            <!-- FINE SHOW -->
+
             <div class="laterali">
               <h4>Programmazione di questa stagione</h4>
               <p>Guarda i nuovi simulcast per questa stagione e quelli che continuano dalle scorse stagioni! Puoi anche controllare il calendario delle uscite per le date precise.</p>
