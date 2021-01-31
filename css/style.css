@@ -227,21 +227,43 @@ display: flex;
   color: white;
 }
 
-.lista .lista-container h3{
+.lista .lista-container h4{
   color: #F47521;
 }
+.lista button{
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #F47521;
+}
 
+/* TO DO LIST */
+.guardare,
+.guardati{
+  min-height: 100px;
+  margin: 20px 0;
+}
 .lista li{
-  padding: 10px 0;
+  padding: 10px 0 10px 25px;
   font-size: 15px;
   border-bottom: 1px solid grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .lista li i{
-  padding-left: 25px;
+  margin-right: 25px;
+  color: #F47521;
 }
 
-.lista h4{
+.lista i:hover,
+.lista button:hover{
+  cursor: pointer;
+}
+
+.lista h5{
   color: grey;
 }
 

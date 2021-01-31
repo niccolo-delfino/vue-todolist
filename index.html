@@ -154,28 +154,37 @@
               <div class="barra-grigia">
                 <h2>La tua lista</h2>
                 <div class="nuovo-todo">
-                  <input type="text" @keyup.enter="aggiungiTodo" v-model="todosNuovo" placeholder="Inserisci qui">
+                  <input type="text" @keyup.enter="aggiungiTodo" v-model="todosNuovo" placeholder="Inserisci qui l'Anime">
                   <button @click="aggiungiTodo">Aggiungi</button>
                 </div>
               </div>
 
               <div class="lista-container">
                 <div class="all-todos">
-                  <h3>Anime da guardare</h3>
-                  <ul class="none">
-                    <li v-for="(todo, index) in todos"> {{todo}}
-                    <i class="fas fa-times" @click="cancellaTodo(index)"></i>
-                    </li>
-                  </ul>
+                  <div class="guardare">
+                    <h4>Anime da guardare</h4>
+                    <ul class="none">
+                      <li v-for="(todo, index) in todos">
+                      <p>{{todo}}</p>
+                      <i class="fas fa-times" @click="cancellaTodo(index)"></i>
+                      </li>
+                    </ul>
+                  </div>
 
-                  <h4>Cancella tutto <i class="fas fa-times" @click="cancellaTutto"></i></h4>              
-                  <h3>Anime guardati</h3>
-                  <ul class="none">
-                    <li v-for="(todo, index) in todosCancellati"> {{todo}}
-                    <i class="fas fa-window-restore" @click="ripristinaTodo(index)"></i>
-                    <i class="fas fa-times" @click="cancellaDefinitivamente(index)"></i>
-                    </li>
-                  </ul>
+                  <h5>Cancella tutto <i class="fas fa-times" @click="cancellaTutto"></i></h5>
+
+                  <div class="guardati">
+                    <h4>Anime guardati</h4>
+                    <ul class="none">
+                      <li v-for="(todo, index) in todosCancellati">
+                      <p>{{todo}}</p>
+                      <div class="icone">
+                        <i class="fas fa-window-restore" @click="ripristinaTodo(index)"></i>
+                        <i class="fas fa-times" @click="cancellaDefinitivamente(index)"></i>
+                      </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
