@@ -165,13 +165,17 @@
                     <h4>Anime da guardare</h4>
                     <ul class="none">
                       <li v-for="(todo, index) in todos">
-                      <p>{{todo}}</p>
+
+                      <p><i class="fas fa-pencil-alt" @click="editTodo(index)"></i>{{todo}}</p>
                       <i class="fas fa-times" @click="cancellaTodo(index)"></i>
                       </li>
                     </ul>
                   </div>
 
-                  <h5>Cancella tutto <i class="fas fa-times" @click="cancellaTutto"></i></h5>
+                  <div class="cancella">
+                    <h5>Cancella tutti gli Anime da guardare <i class="fas fa-times" @click="cancellaNuovo"></i></h5>
+                    <h5>Cancella tutti gli Anime guardati <i class="fas fa-times" @click="cancellaTutto"></i></h5>
+                  </div>
 
                   <div class="guardati">
                     <h4>Anime guardati</h4>
@@ -184,6 +188,7 @@
                       </div>
                       </li>
                     </ul>
+                    <h5>Ripristina tutti gli Anime<i class="fas fa-window-restore" @click="ripristinaTutto"></i></h5>
                   </div>
                 </div>
               </div>

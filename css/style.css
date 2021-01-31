@@ -244,6 +244,7 @@ display: flex;
   min-height: 100px;
   margin: 20px 0;
 }
+
 .lista li{
   padding: 10px 0 10px 25px;
   font-size: 15px;
@@ -263,9 +264,24 @@ display: flex;
   cursor: pointer;
 }
 
-.lista h5{
+.cancella{
+  display: flex;
+}
+
+h5 {
+  padding-right: 15px;
   color: grey;
 }
+
+h5 i {
+  padding-left: 15px;
+}
+
+.guardati h5{
+  margin-top: 20px;
+}
+
+
 
 
 /* LATO DX */
